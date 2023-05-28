@@ -1,32 +1,27 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Sticky Nav Bar</title>
-  <link rel="stylesheet" type="text/css" href="styles.css">
-  <script src="script.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Find meal using Meal API</title>
 </head>
 <body>
-  <nav class="navbar">
-    <div class="logo">
-        <h1>HERE 4U</h1>
-        <img src="download (2).jpg" alt="loggo">
-      
+    <div class="container d-flex justify-content-center my-5">
+        <i class="fa-solid fa-xmark"></i>
+        <input type="text" name="" id="userInput" class="form-control w-50" placeholder="Search Your Meal...">
+        <button id="btn" class="btn btn-warning">Search</button>
     </div>
-    <ul class="nav-links">
-      <li><a href="#">Home</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Services</a></li>
-      <li><a href="#">Contact</a></li>
-    </ul>
-    <div class="mobile-menu">
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
-  </nav>
 
-  <div class="content">
-    <!-- Your website content here -->
-  </div>
-</body>
-</html>
+    <div class="container my-5" id="heading"></div>
+
+    <div class="container" id="appendData">
+        <h1 class="text-center find">Search the ingredient, Find the meal </h1>
+
+        <h2 class="text-center text-danger my-3 notfound"></h2>
+        <h2 class="text-center text-success my-5 try"></h2>
+
+    </div>
