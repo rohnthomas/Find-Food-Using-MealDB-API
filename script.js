@@ -14,8 +14,7 @@ document.getElementById("btn").addEventListener("click", () => {
     let data =''
     sendData.meals.forEach((e, i) => {
       data +=`
-        <h2 class='text-center text-secondary mt-5'>Food Area: ${e.strArea}</h2>
-        <h2 class='text-center text-warning'>Food Name: ${e.strMeal}</h2>
+      <h2 class='text-center text-secondary mt-5'>Food Name: ${e.strMeal}</h2>
         <div class="row">
         <div class="col-md-4">
             <img src="${e.strMealThumb}" alt="" class='w-100 img'>
